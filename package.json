@@ -1,0 +1,27 @@
+{
+  "name": "@balancer-labs/sor-api",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "@balancer-labs/sor2": "file:/Users/jg/Documents/balancer-sor-v2/",
+    "@ethersproject/contracts": "^5.0.5",
+    "@ethersproject/providers": "^5.0.5",
+    "bignumber.js": "^9.0.1",
+    "debug": "^4.3.1",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.3.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.6.1",
+    "prettier": "^2.3.1",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  }
+}
