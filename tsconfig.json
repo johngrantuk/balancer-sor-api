@@ -1,11 +1,17 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "module": "commonjs",
-        "rootDir": "./",
-        "outDir": "./build",
+        "module": "commonjs",  
+        "outDir": "./dist/",
+        "baseUrl": "src",
         "esModuleInterop": true,
-        "strict": true,
         "noImplicitAny": false,
-    }
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "strictNullChecks": false,
+        "declaration": true,
+    },
+    "include": [
+        "src"
+    ]
 }

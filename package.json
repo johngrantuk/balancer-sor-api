@@ -4,10 +4,14 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node ./src/index.ts"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "postinstall": "tsc",
+    "start-local": "ts-node ./src/index.ts"
   },
+  "engines": { "node": "14.15.1" },
   "dependencies": {
-    "@balancer-labs/sor2": "file:/Users/jg/Documents/balancer-sor-v2/",
+    "@balancer-labs/sor2": "balancer-labs/balancer-sor#john/ui-694-sor-lido-add-static-route-refactor",
     "@ethersproject/contracts": "^5.0.5",
     "@ethersproject/providers": "^5.0.5",
     "bignumber.js": "^9.0.1",

@@ -2,8 +2,9 @@
 # yarn lockfile v1
 
 
-"@balancer-labs/sor2@file:../balancer-sor-v2":
+"@balancer-labs/sor2@balancer-labs/balancer-sor#john/ui-694-sor-lido-add-static-route-refactor":
   version "2.0.1"
+  resolved "https://codeload.github.com/balancer-labs/balancer-sor/tar.gz/b491838263981c336c0ab3ffcf2891f7394784f2"
   dependencies:
     "@ethersproject/address" "^5.0.5"
     "@ethersproject/constants" "^5.0.5"
