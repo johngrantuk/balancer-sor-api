@@ -14,7 +14,7 @@ import {
 const log = debug("balancer");
 dotenv.config();
 
-const { SERVER_PORT, MAX_POOLS, INFURA_PROJECT_ID } =
+const { PORT, MAX_POOLS, INFURA_PROJECT_ID } =
   process.env;
 
 const nodeUrl = `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`;
@@ -24,6 +24,8 @@ const gasPrice = new BigNumber('30000000000');
 let maxPools: number = 4;
 if (MAX_POOLS)
   maxPools = Number(MAX_POOLS);
+
+const port = PORT || 3000;
 
 log(`connecting to node ${nodeUrl}`);
 const provider: any = new JsonRpcProvider(nodeUrl);
@@ -130,6 +132,6 @@ app.post("/", express.json(), async (req, res, next) => {
   }
 });
 
-app.listen(SERVER_PORT, () => {
-  log(`Server listening at http://localhost:${SERVER_PORT}`);
+app.listen(PORT, () => {
+  log(`Server listening at http://localhost:${PORT}`);
 });
